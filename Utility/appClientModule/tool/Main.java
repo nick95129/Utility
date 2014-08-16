@@ -5,6 +5,7 @@ public class Main {
 	      NumberUtility numUtility = new NumberUtility(); //single instance shared by oddGen and evenGen threads
 	      final int MAX_NUM = 10; 
 	  
+	      System.out.println("test 1");
 	      //create 2 threads, one to generate odd numbers and the other to generate even numbers
 	      NumberGenerator oddGen  = new NumberGenerator(numUtility, MAX_NUM, false);
 	      NumberGenerator evenGen = new NumberGenerator(numUtility, MAX_NUM, true);
