@@ -1,10 +1,11 @@
 package map;
 
+import java.util.HashMap;
+
 public class MyHashMap <K, V>{
 	public  MyHashMap() {}
 	
 	Entry<K,V>[] tables;
-
 	
 	public static class Entry<K,V> {
 		int hash;
